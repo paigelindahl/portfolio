@@ -1,8 +1,17 @@
+import React from 'react';
+import { 
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
+import { HomePage } from './components/HomePage';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Router>
+      <div className="App">
+        <Route exact path="/" component={HomePage}/>
+      </div>
+    </Router>
   );
 }
 
