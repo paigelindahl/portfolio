@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/HomePage.scss'
+import { SplitText } from './SplitText';
 
 export function HomePage(props) {
   
@@ -7,10 +8,7 @@ export function HomePage(props) {
   return (
     <>
     <div className="homepage-background">
-      <div className="name-title">
-        <h1>Paige Lindahl</h1>
-        <h4>Web Developer</h4>
-      </div>
+     <SplitText firstText="Hi! I'm Paige," secondText="web developer." role="heading" />
     </div>
     </>
   )
