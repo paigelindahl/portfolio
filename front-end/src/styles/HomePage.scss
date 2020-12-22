@@ -1,0 +1,23 @@
+// body{
+//   background-image: url("https://github.com/paigelindahl/portfolio/blob/master/front-end/public/images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg?raw=true");
+//   height: 100vh;
+//   width: 100vw;
+//   background-size: cover;
+  
+// }
+body{
+  background-color: black;
+}
+
+.name-title{
+  font-size: 25px;
+  color: #d4af37;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 200px;
+  border: solid 2px #d4af37;
+}
