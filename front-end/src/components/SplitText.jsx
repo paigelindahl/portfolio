@@ -9,7 +9,7 @@ export function SplitText(props) {
     <div className="split-text">
         <span aria-label={props.firstText} role={props.role} className="split-text">
           {props.firstText.split("").map(function(char, index){
-              let style = {"animation-delay": (0.5 + index / 10) + "s"}
+              let style = {"animationDelay": (index / 10) + "s"}
               return <span
                 aria-hidden="true"
                 key={index}
@@ -21,7 +21,7 @@ export function SplitText(props) {
         <br/>
         <span aria-label={props.secondText} role={props.role} className="split-text">
           {props.secondText.split("").map(function(char, index){
-              let style = {"animation-delay": (0.5 + index / 10) + "s"}
+              let style = {"animationDelay": (index / 10) + "s"}
               return <span
                 aria-hidden="true"
                 key={index}
