@@ -7,9 +7,8 @@ export function HomePage(props) {
 
   return (
     <>
-    <div className="homepage-background">
-      <Nav/>
-    </div>
+     <Nav/>
+ 
     </>
   )
 }

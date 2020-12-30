@@ -9,6 +9,7 @@ import Box from "@material-ui/core/Box";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { SplitText } from './SplitText';
+import OutlineButton from './OutlineButton';
 import Blocks from './Blocks';
 import '../styles/Nav.scss';
 
@@ -61,16 +62,19 @@ const theme = createMuiTheme({
       main: "#002731",
     },
   },
-  spacing: 8,
+  // spacing: 8,
 });
 
 export default function SimpleTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  console.log('this is value', value);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+
 
   return (
     <div className={classes.root}>
@@ -99,18 +103,21 @@ export default function SimpleTabs() {
           <SplitText firstText="Hi! I'm Paige," secondText="web developer." role="heading" className="home-text"/>
           <Blocks className="moving-blocks"/>
         </div>
+        <div className="btn-container">
+          <OutlineButton text="View My Projects" setValue={setValue}/>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        item one
+        About
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item two
+       Skills
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Three
+        Projects
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Four
+        Contact
       </TabPanel>
       </ThemeProvider>
     </div>
