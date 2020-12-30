@@ -22,4 +22,4 @@ export default function Blocks() {
     </div>
   )}
 
-  ReactDOM.render(<Blocks />, document.getElementById('root'))
+  // ReactDOM.render(<Blocks />, document.getElementById('root'))

@@ -83,7 +83,7 @@ export default function SimpleTabs() {
             className="nav-tabs"
             TabIndicatorProps={{
               style: {
-                backgroundColor: " #e6aedd"
+                backgroundColor: "#00627d"
               }
               }}
           >
@@ -96,8 +96,8 @@ export default function SimpleTabs() {
         </AppBar>
       <TabPanel value={value} index={0} >
         <div className="text-blocks">
-          <SplitText firstText="Hi! I'm Paige," secondText="web developer." role="heading" />
-          <Blocks/>
+          <SplitText firstText="Hi! I'm Paige," secondText="web developer." role="heading" className="home-text"/>
+          <Blocks className="moving-blocks"/>
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>

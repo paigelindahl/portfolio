@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/HomePage.scss'
-import { SplitText } from './SplitText';
 import Nav from './Nav';
 
 export function HomePage(props) {
