@@ -1,14 +1,18 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import '../styles/FadeExample.scss';
 
 class FadeExample extends React.Component {
   render() {
     return (
       <div>
         <Fade left>
-          <div>
-            <img src="https://github.com/saadxislam/ukiyo/blob/master/docs/dashboard.jpg?raw=true" width="250" height="500"/>
-            <p>This is Ukiyo</p>
+          <div className="project-container">
+            <img src={this.props.image} width={this.props.wid} height={this.props.high}/>
+            <div className="text-container">
+              <p className="project-text">{this.props.text}</p>
+              <p className="project-text">{this.props.language}</p>
+            </div>
           </div>
         </Fade>
       </div>
