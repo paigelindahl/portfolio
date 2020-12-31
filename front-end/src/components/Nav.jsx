@@ -9,6 +9,7 @@ import Box from "@material-ui/core/Box";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { SplitText } from './SplitText';
+import { Projects } from './Projects';
 import OutlineButton from './OutlineButton';
 import Blocks from './Blocks';
 import '../styles/Nav.scss';
@@ -114,7 +115,7 @@ export default function SimpleTabs() {
        Skills
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Projects
+        <Projects/>
       </TabPanel>
       <TabPanel value={value} index={4}>
         Contact
