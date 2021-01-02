@@ -1,7 +1,29 @@
-.project-title{
+.projects-title{
   color: #e8e8e8;
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   text-align: center;
   padding: 90px;
+}
+
+.project-title{
+  color: #e8e8e8;
+  font-size: 30px;
+}
+
+.project-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+}
+
+.project-text{
+  color: #e8e8e8;
+  font-size: 20px;
+}
+
+.text-container{
+  width: 50vw;
+  
 }
