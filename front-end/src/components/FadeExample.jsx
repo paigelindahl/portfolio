@@ -9,8 +9,8 @@ class FadeExample extends React.Component {
         <Fade left>
           <div className="project-container">
             <div class="img-container">
-              <div className="circle">
-                <img src={this.props.image} width={this.props.wid} height={this.props.high} />
+              <div className="circle" style={{ backgroundImage: `url(${this.props.image})` }}>
+                {/* <img src={this.props.image} width={this.props.wid} height={this.props.high} /> */}
               </div>
             </div>
             <div className="text-container">
