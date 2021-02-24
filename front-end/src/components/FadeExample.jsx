@@ -14,7 +14,7 @@ class FadeExample extends React.Component {
               </div>
             </div>
             <div className="text-container">
-              <h4 className="project-title">{this.props.title}</h4>
+              <h2 className="project-title">{this.props.title}</h2>
               <p className="project-text">{this.props.text}</p>
               <p className="project-text">{this.props.language}</p>
             </div>
