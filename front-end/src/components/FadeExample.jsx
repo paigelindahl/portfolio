@@ -2,6 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Button } from "@chakra-ui/react"
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 import '../styles/FadeExample.scss';
 
@@ -19,12 +20,14 @@ class FadeExample extends React.Component {
             <div className="text-container">
               <h2 className="project-title">{this.props.title}</h2>
               <hr />
-              <p className="project-text">{this.props.language}</p>
+              <p className="project-text language">{this.props.language}</p>
               <p className="project-text">{this.props.text}</p>
               <div className="github-btn-container">
-                <Button leftIcon={<FaGithub />} colorScheme="teal" variant="solid">
-                  GitHub
-                </Button>
+                <Link to={{ pathname: `${this.props.github}` }} target="_blank">
+                  <Button leftIcon={<FaGithub />} colorScheme="teal" variant="solid">
+                    GitHub
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

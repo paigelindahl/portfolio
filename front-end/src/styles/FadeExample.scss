@@ -34,6 +34,10 @@
       .project-text{
         color: #e8e8e8;
         font-size: 20px;
+        &.language {
+          font-weight: 700;
+          margin-top: 20px;
+        }
       }
     .github-btn-container {
       margin-top: 15px;
