@@ -9,6 +9,7 @@ import Box from "@material-ui/core/Box";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { SplitText } from './SplitText';
+import { HomePage } from './HomePage';
 import { Projects } from './Projects';
 import OutlineButton from './OutlineButton';
 import Blocks from './Blocks';
@@ -53,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     // backgroundColor: "#002731",
     // backgroundColor: theme.palette.background.primary,
     // backgroundColor: theme.palette.background.paper,
-   
+
   }
 }));
 
@@ -90,35 +91,29 @@ export default function SimpleTabs() {
               style: {
                 backgroundColor: "#00627d"
               }
-              }}
+            }}
           >
-            <Tab label="Home" {...a11yProps(0)}   style={{minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold"}}/>
-            <Tab label="About" {...a11yProps(1)} style={{minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold"}}/>
-            <Tab label="Skills" {...a11yProps(2)} style={{minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold"}}/>
-            <Tab label="Projects" {...a11yProps(3)} style={{minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold"}}/>
-            <Tab label="Contact" {...a11yProps(4)} style={{minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold"}}/>
+            <Tab label="Home" {...a11yProps(0)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
+            <Tab label="About" {...a11yProps(1)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
+            <Tab label="Skills" {...a11yProps(2)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
+            <Tab label="Projects" {...a11yProps(3)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
+            <Tab label="Contact" {...a11yProps(4)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
           </Tabs>
         </AppBar>
-      <TabPanel value={value} index={0} >
-        <div className="text-blocks">
-          <SplitText firstText="Hi! I'm Paige," secondText="web developer." role="heading" className="home-text"/>
-          <Blocks className="moving-blocks"/>
-        </div>
-        <div className="btn-container">
-          <OutlineButton text="View My Projects" setValue={setValue}/>
-        </div>
+        <TabPanel value={value} index={0} >
+          <HomePage setValue={setValue} />
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          About
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        About
+        <TabPanel value={value} index={2}>
+          Skills
       </TabPanel>
-      <TabPanel value={value} index={2}>
-       Skills
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <Projects/>
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Contact
+        <TabPanel value={value} index={3}>
+          <Projects />
+        </TabPanel>
+        <TabPanel value={value} index={4}>
+          Contact
       </TabPanel>
       </ThemeProvider>
     </div>

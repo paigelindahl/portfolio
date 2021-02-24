@@ -3,8 +3,7 @@ import {
   BrowserRouter as Router,
   Route
 } from "react-router-dom";
-import { HomePage } from './components/HomePage';
-import Blocks from './components/Blocks';
+import Nav from './components/Nav';
 import { ChakraProvider } from "@chakra-ui/react"
 
 
@@ -13,8 +12,8 @@ function App() {
     <ChakraProvider>
       <Router>
         <div className="App">
-          <Route exact path="/" component={HomePage} />
-          <Route path="/blocks" component={Blocks} />
+          <Route exact path="/" component={Nav} />
+          {/* <Route path="/blocks" component={Blocks} /> */}
         </div>
       </Router>
     </ChakraProvider>

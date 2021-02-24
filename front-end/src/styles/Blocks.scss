@@ -26,7 +26,9 @@
   justify-content: center;
   font-weight: 800;
   color: black;
-  background:  #002731;
+  // background-image: linear-gradient(to bottom right,#002731, black) !important;
+  // background:  #002731;
+  background: inherit;
   top: 190px;
   left: 150px;
 }
@@ -34,7 +36,8 @@
 .script-bf-box {
   width: 10em;
   height: 400px;
-  background: #003745;
+  // background: #003745;
+  background-image: linear-gradient(to bottom right,#002731, black) !important;
   margin: 5px;
   will-change: transform;
 }
