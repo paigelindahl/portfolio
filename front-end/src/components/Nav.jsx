@@ -10,6 +10,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { HomePage } from './HomePage';
 import { Projects } from './Projects';
+import { About } from './About';
 import '../styles/Nav.scss';
 
 function TabPanel(props) {
@@ -92,9 +93,8 @@ export default function SimpleTabs() {
           >
             <Tab className="nav-text" label="Home" {...a11yProps(0)} />
             <Tab className="nav-text" label="Projects" {...a11yProps(1)} />
-            <Tab className="nav-text" label="Skills" {...a11yProps(2)} />
-            <Tab className="nav-text" label="About" {...a11yProps(3)} />
-            <Tab className="nav-text" label="Contact" {...a11yProps(4)} />
+            <Tab className="nav-text" label="About" {...a11yProps(2)} />
+            <Tab className="nav-text" label="Contact" {...a11yProps(3)} />
           </Tabs>
         </AppBar>
         <TabPanel value={value} index={0} >
@@ -104,14 +104,11 @@ export default function SimpleTabs() {
           <Projects setValue={setValue} />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Skills
-      </TabPanel>
-        <TabPanel value={value} index={3}>
-          About
+          <About setValue={setValue} />
         </TabPanel>
-        <TabPanel value={value} index={4}>
+        <TabPanel value={value} index={3}>
           Contact
-      </TabPanel>
+        </TabPanel>
       </ThemeProvider>
     </div>
   );

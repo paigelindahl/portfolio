@@ -3,7 +3,6 @@ import '../styles/Button.scss';
 
 export function Button(props) {
   const handleButton = () => {
-    console.log('this is props', props.next);
     let page = parseInt(props.next);
     props.setValue(page);
   }
@@ -12,7 +11,7 @@ export function Button(props) {
   return (
     <>
 
-      <div class="btn btn-one" onClick={handleButton}>
+      <div className="btn btn-one" onClick={handleButton}>
         <span>{props.text}</span>
       </div>
 

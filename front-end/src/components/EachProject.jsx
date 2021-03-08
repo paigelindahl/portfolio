@@ -3,10 +3,9 @@ import Fade from 'react-reveal/Fade';
 import { Button } from "@chakra-ui/react"
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
+import '../styles/EachProject.scss';
 
-import '../styles/FadeExample.scss';
-
-class FadeExample extends React.Component {
+class EachProject extends React.Component {
   render() {
     return (
       <div>
@@ -37,4 +36,4 @@ class FadeExample extends React.Component {
   }
 }
 
-export default FadeExample;
+export default EachProject;

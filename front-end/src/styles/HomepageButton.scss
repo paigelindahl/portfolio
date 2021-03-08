@@ -19,7 +19,7 @@
     border: #005067 2px solid;
     outline: none;
     color: #005067;
-    background: #002833;
+    background: #001a21;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -49,7 +49,7 @@
 }
 
 .glow-on-hover:active:after {
-    background: #002e3a;
+    background: #001a21;
 }
 
 .glow-on-hover:hover:before {
@@ -62,7 +62,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background:#002833;
+    background:#001a21;
     left: 0;
     top: 0;
     border-radius: 50px;
