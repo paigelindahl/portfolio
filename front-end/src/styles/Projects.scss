@@ -1,18 +1,21 @@
-.projects-title{
-  color: #e8e8e8;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 80px;
-  position: relative;
-  left: 150px;
-  padding: 150px 0px 75px 0px;
+.projects-container {
+  .projects-title{
+    color: #e8e8e8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    position: relative;
+    left: 150px;
+    padding: 150px 0px 75px 0px;
 
-  
-}
+    
+  }
 
-.view-skills-btn-container {
-  display: flex;
-  justify-content: center;
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
 
 

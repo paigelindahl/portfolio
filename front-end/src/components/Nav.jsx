@@ -101,7 +101,7 @@ export default function SimpleTabs() {
           <HomePage setValue={setValue} />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Projects />
+          <Projects setValue={setValue} />
         </TabPanel>
         <TabPanel value={value} index={2}>
           Skills

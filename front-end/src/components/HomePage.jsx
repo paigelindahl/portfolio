@@ -16,7 +16,7 @@ export function HomePage(props) {
         <div className="moving-text-container">
           <SplitText firstText="Hi! I'm Paige," secondText="web developer." role="heading" className="home-text" />
         </div>
-        <div className="btn-container">
+        <div className="homepage-btn-container">
           <HomepageButton text="View My Projects" setValue={props.setValue} />
         </div>
       </div>
