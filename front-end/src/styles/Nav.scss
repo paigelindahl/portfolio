@@ -1,18 +1,17 @@
-.nav-tabs{
-  width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+
+.nav-tabs {
+  .nav-text {
+    min-width: 20%;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
-.text-blocks{
-  display: flex;
-  justify-content: space-evenly;
-}
 
-.moving-blocks{
-  width: 50vw;
-}
 
-.btn-container{
-  position: relative;
-  top: 120px;
-  left: 170px;
-}
+
+
+
+

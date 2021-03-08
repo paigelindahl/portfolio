@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
 * {
   padding: 0;
   margin: 0;
 }
 
 .split-text{
-  position: relative;
-  top: 150px;
-  left: 40px;
   width: 50em;
+  text-align: center;
+  margin-top: 40px;
 }
 
 span span {
@@ -16,8 +16,9 @@ span span {
   animation: move-text-color 0.75s forwards;
   bottom: -1em;
   opacity: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 60px;
+  font-weight: 700;
 }
 
 @keyframes move-text-color {

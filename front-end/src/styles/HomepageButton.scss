@@ -1,0 +1,81 @@
+.project-button{
+
+  button {
+    padding: 17px 120px 17px 120px;
+    display: block;
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 30px;
+    &:hover {
+      color: #017696;
+    }
+    
+
+  }
+
+  .glow-on-hover {
+    // width: 220px;
+    // height: 50px;
+    border: #005067 2px solid;
+    outline: none;
+    color: #005067;
+    background: #002833;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 50px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #00ffd5, #01967d, #015446, #01967d, #00ffd5,  );
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50px;
+   
+}
+
+.glow-on-hover:active {
+    color: #005268;
+}
+
+.glow-on-hover:active:after {
+    background: #002e3a;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#002833;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    color: #017696;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+  
+
+}

@@ -8,11 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
-import { SplitText } from './SplitText';
 import { HomePage } from './HomePage';
 import { Projects } from './Projects';
-import OutlineButton from './OutlineButton';
-import Blocks from './Blocks';
 import '../styles/Nav.scss';
 
 function TabPanel(props) {
@@ -93,24 +90,24 @@ export default function SimpleTabs() {
               }
             }}
           >
-            <Tab label="Home" {...a11yProps(0)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
-            <Tab label="About" {...a11yProps(1)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
-            <Tab label="Skills" {...a11yProps(2)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
-            <Tab label="Projects" {...a11yProps(3)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
-            <Tab label="Contact" {...a11yProps(4)} style={{ minWidth: "20%", fontFamily: "Montserrat", fontSize: "15px", fontWeight: "bold" }} />
+            <Tab className="nav-text" label="Home" {...a11yProps(0)} />
+            <Tab className="nav-text" label="Projects" {...a11yProps(1)} />
+            <Tab className="nav-text" label="Skills" {...a11yProps(2)} />
+            <Tab className="nav-text" label="About" {...a11yProps(3)} />
+            <Tab className="nav-text" label="Contact" {...a11yProps(4)} />
           </Tabs>
         </AppBar>
         <TabPanel value={value} index={0} >
           <HomePage setValue={setValue} />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          About
-      </TabPanel>
+          <Projects />
+        </TabPanel>
         <TabPanel value={value} index={2}>
           Skills
       </TabPanel>
         <TabPanel value={value} index={3}>
-          <Projects />
+          About
         </TabPanel>
         <TabPanel value={value} index={4}>
           Contact

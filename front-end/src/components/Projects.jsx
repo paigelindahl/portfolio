@@ -1,5 +1,6 @@
 import React from 'react'
-import FadeExample from './FadeExample'
+import FadeExample from './FadeExample';
+import { HomepageButton } from './HomepageButton';
 import '../styles/Projects.scss';
 
 export function Projects(props) {
@@ -13,6 +14,9 @@ export function Projects(props) {
       <FadeExample image="https://images.unsplash.com/photo-1600854163097-3602918f7a9a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fGp1bmdsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" title="JUNGLE" text="Mini e-commerce application. Allows users to select and purchase products using Stripe." language="ERB / Bootstrap / Ruby on Rails" github="https://github.com/paigelindahl/Jungle" />
       <FadeExample image="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8YmlyZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" title="TWEETER" text="Single page application Twitter clone." language="HTML / CSS / JS / jQuery / AJAX / Node / Express" github="https://github.com/paigelindahl/tweeter" />
       <FadeExample image="https://images.unsplash.com/photo-1600176842418-f7c1d1035ef1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDV8fGtleWJvYXJkfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" title="TINYAPP" text="Full stack URL shortener. Allows users to add, edit and delete shortened URLs that they have generated." language="HTML / CSS / EJS / JS / Node / Express" github="https://github.com/paigelindahl/tinyapp" />
+      <div className="view-skills-btn-container">
+        {/* <Button text="View My Skills" /> */}
+      </div>
     </>
   )
 }

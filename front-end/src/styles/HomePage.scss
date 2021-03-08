@@ -1,27 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
 body{
-  // background-color: #002731 !important;
-  background-image: linear-gradient(#002731, black) !important;
+  background-image: linear-gradient( #002731, #002731, black,) !important;
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
   
 }
 
 .home-container {
   height: 100vh;
+
+  .animation-container {
+    height: 40vh;
+    width: 45vw;
+  }
+
+  .moving-text-container {
+    height: 55vh;
+    width: 45vw;
+  }
+
+
+
+  .btn-container{
+    position: relative;
+    left: 900px;
+    bottom: 600px;
+
+  }
 }
 
-
-// .name-title{
-//   font-size: 35px;
-//   font-family: 'Josefin Sans', sans-serif;
-//   color: white;
-//   opacity: 0.7;
-//   position: absolute;
-//   text-align: center;
-//   top: 20%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
 
 
