@@ -2,7 +2,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import range from 'lodash-es/range';
-import '../styles/Blocks.scss';
+import '../styles/HomePage.scss';
 
 const items = range(4)
 const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`
@@ -18,8 +18,9 @@ export default function Blocks() {
   })
   return (
     <div className="blocks-container">
-    {items.map(i => <animated.div key={i} className="script-bf-box" style={{ transform: radians.interpolate(interp(i)) }} />)}
+      {items.map(i => <animated.div key={i} className="script-bf-box" style={{ transform: radians.interpolate(interp(i)) }} />)}
     </div>
-  )}
+  )
+}
 
   // ReactDOM.render(<Blocks />, document.getElementById('root'))

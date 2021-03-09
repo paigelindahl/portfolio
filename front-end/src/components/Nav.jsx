@@ -11,6 +11,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import { HomePage } from './HomePage';
 import { Projects } from './Projects';
 import { About } from './About';
+import { Contact } from './Contact';
 import '../styles/Nav.scss';
 
 function TabPanel(props) {
@@ -107,7 +108,7 @@ export default function SimpleTabs() {
           <About setValue={setValue} />
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Contact
+          <Contact setValue={setValue} />
         </TabPanel>
       </ThemeProvider>
     </div>

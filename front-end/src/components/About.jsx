@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import { Button } from './Button';
 import '../styles/About.scss';
 import '../styles/General.scss';
 
@@ -19,6 +20,9 @@ export function About(props) {
           <p><span>Systems, Databes:</span> SQL, Git</p>
           <p><span>Testing:</span> Jest, Cyprus, Mocha, Chai</p>
         </Fade>
+        <div className="btn-container">
+          <Button text="Contact Me" next="3" setValue={props.setValue} />
+        </div>
 
       </div>
 

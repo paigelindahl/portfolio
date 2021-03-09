@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Button } from "@chakra-ui/react"
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
-import '../styles/EachProject.scss';
+import '../styles/Projects.scss';
 
 class EachProject extends React.Component {
   render() {

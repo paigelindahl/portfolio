@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/SplitText.scss';
-import OutlineButton from './OutlineButton';
+import '../styles/HomePage.scss';
 
 export function SplitText(props) {
 
