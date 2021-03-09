@@ -87,7 +87,7 @@ export default function SimpleTabs() {
             className="nav-tabs"
             TabIndicatorProps={{
               style: {
-                backgroundColor: "#00627d"
+                backgroundColor: "#4F9493"
               }
             }}
           >

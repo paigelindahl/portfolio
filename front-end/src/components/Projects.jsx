@@ -2,6 +2,7 @@ import React from 'react'
 import EachProject from './EachProject';
 import { Button } from './Button';
 import '../styles/Projects.scss';
+import '../styles/General.scss';
 
 export function Projects(props) {
 
@@ -9,7 +10,7 @@ export function Projects(props) {
   return (
     <>
       <div className="projects-container">
-        <h1 className="title">PROJECTS</h1>
+        <h1 className="title"><span className="underline--magical">PROJECTS</span></h1>
         <EachProject image="https://images.unsplash.com/photo-1524863479829-916d8e77f114?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8eW9nYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" title="UKIYO" text="A one stop wellness app intended to alleviate stress and promote positive feelings. Ukiyo provides a dashboard with access to meditation, yoga, gratitude journal and todo list organizer." language="React JS / Material UI / PSQL / Node / Express" github="https://github.com/paigelindahl/ukiyo" />
         <EachProject image="https://images.unsplash.com/photo-1584365685547-9a5fb6f3a70c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHBpenphfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" title="PIZZERIA" text="Pizza pickup application, allowing users to order pizza online from a local pizza parlour. Admin are able to monitor orders and send an SMS using Twilio when orders are ready for pickup." language="JS / Bootstrap / PSQL / Node / Express" github="https://github.com/paigelindahl/kpe" />
         <EachProject image="https://images.unsplash.com/photo-1600854163097-3602918f7a9a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fGp1bmdsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" title="JUNGLE" text="Mini e-commerce application. Allows users to select and purchase products using Stripe." language="ERB / Bootstrap / Ruby on Rails" github="https://github.com/paigelindahl/Jungle" />
